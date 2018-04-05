@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
+import { NavController, ViewController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-add-item',
@@ -10,7 +10,7 @@ export class AddItemPage {
   title: String;
   description: String;
 
-  constructor(public navCtrl: NavController, public view: ViewController) {
+  constructor(public navCtrl: NavController, public view: ViewController, public navParams: NavParams) {
   }
 
   saveItem(){
